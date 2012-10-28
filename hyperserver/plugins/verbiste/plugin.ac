@@ -1,0 +1,2 @@
+PKG_CHECK_MODULES(VERBISTE, [verbiste-0.1])
+

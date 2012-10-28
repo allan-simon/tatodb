@@ -1,0 +1,7 @@
+*.[oa]
+*.swp
+*.pyc
+build/*
+*.back
+*.svn*
+*server/src/.svn/*

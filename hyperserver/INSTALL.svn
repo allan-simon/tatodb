@@ -1,0 +1,15 @@
+Compiler Tatodb
+===============
+libtoolize
+aclocal
+autoconf
+automake --add-missing
+ 
+./configure
+make
+make install 
+
+Générer le xml de data
+======================
+cd data/
+sh update.sh

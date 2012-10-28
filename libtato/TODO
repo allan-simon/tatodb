@@ -1,0 +1,3 @@
+Known bugs :
+    The lib will segfault if you try to load a xml with
+    relation pointing to a non existent item

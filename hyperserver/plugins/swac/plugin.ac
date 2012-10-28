@@ -1,0 +1,2 @@
+PKG_CHECK_MODULES(SQLITE3, [sqlite3])
+
