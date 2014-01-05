@@ -1,5 +1,6 @@
 <?php
 
+ini_set('memory_limit','-1');
 $sentence_exists = array();
 $redirect = array();
 
@@ -11,7 +12,7 @@ function parse_sentences($path) {
 		return;
 
 	$sentence_str_exists = array();
-	while ($line = fgets($handle, 1024)) {
+	while ($line = fgets($handle, 4096)) {
 		$cols = explode("\t", rtrim($line));
 		if (count($cols) == 3) {
 			list($id, $lang, $str) = $cols;
