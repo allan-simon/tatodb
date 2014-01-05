@@ -39,7 +39,7 @@ static void element_start(void *data, XML_Char const *name, XML_Char const **att
 
 		TatoItem *item = tato_db_item_new(thiss->db, atoi(id), lang, str, flags ? atoi(flags) : 0);
 		if (!item) {
-			tato_log_msg_printf(LOG_ERR, "Could not create item %i (\"%s\")", item->id, item->str);
+			tato_log_msg_printf(LOG_ERR, "Could not create item %s (\"%s\")", id, str);
 		}
 		else {
 			thiss->item = item;
